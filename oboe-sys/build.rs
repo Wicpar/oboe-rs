@@ -36,7 +36,7 @@ fn main() {
         #[cfg(not(feature = "shared-link"))]
         {
             add_lib("log", false);
-            add_lib("stdc++", false);
+            add_lib("stdc++",  false);
         }
 
         add_lib("oboe-ext", !cfg!(feature = "shared-link"));
